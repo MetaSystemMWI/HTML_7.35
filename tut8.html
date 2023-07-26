@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>input, label, select, textarea, button. fieldset, legend, output, option, optgroup</p>
+    <form action="" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <fieldset>
+            <legend>This is example form</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+
+            <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars" size="3" multiple>
+                <option value="volvo">Volov</option>
+                <option value="saab">Saab</option>
+                <option value="fiat" selected>Fiat</option>
+                <option value="audi">Audi</option>
+            </select><br><br>
+
+            <textarea name="message" cols="30" rows="10">The cat was playing in the garden</textarea><br><br>
+            <textarea name="message" style="width: 600px; height: 200px;">The cat was playing in the garden</textarea><br><br>
+
+
+            <button type="button">Submit</button><br><br> 0
+            <input type="range" id="a" value="50"> 100+
+            <input type="number" id="b" value="50"> =
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
