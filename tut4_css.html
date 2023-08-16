@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.dotted{
+            outline-style: dotted;
+            outline-width: thin;
+            outline-color: red;
+            outline-offset: 25px;
+        }
+        p.dashed{
+            outline-style: dashed;
+            outline-width: thick;
+            outline-color: green;
+        }
+        p.solid{
+            outline-style: solid;
+            outline-width: medium;
+            /* outline-color: yellow; */
+            outline-color: hsl(130,100%,50%);
+        }
+        p.groove{
+            outline-style: groove;
+            outline-width: 4px;
+            outline-color: rgb(255,190, 170);
+            outline-offset: 15px;
+        }
+        p.none{
+            outline-style: none;
+        }
+        p.hidden{
+            outline-style: hidden;
+        }
+        h1{
+            color: blue;
+            background-color: red;
+            text-align: justify;
+        }
+        p.align{
+            text-align: justify; 
+            /* text-decoration: line-through; */
+            /* text-decoration-color: red; */
+            /* text-decoration-style: solid; */
+            /* text-decoration-thickness:5px ; */
+            text-transform: uppercase;
+            text-indent: 50px;
+            letter-spacing: 5px;
+            line-height: 0.8;
+            text-shadow: 2px 2px 5px red;
+        }
+    </style>
+</head>
+<body>
+    dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden
+    <p class="dotted">Dotted styles</p>
+    <p class="dashed">dashed styles</p>
+    <p class="solid">solid styles</p>
+    <p class="none">solid styles</p>
+    <p class="hidden">solid styles</p><br>
+    <p class="groove">solid styles</p>
+
+
+    <p class="align">Hello World Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aspernatur porro in ratione obcaecati at fugiat repudiandae aut veritatis quam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius voluptate laboriosam doloremque nesciunt quaerat id accusamus qui corporis amet sit?</p>
+</body>
+</html>
