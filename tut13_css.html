@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: section;
+        }
+        h2::before{
+            counter-increment: section;
+            content: "Section " counter(section) ":";
+        }
+        h2{
+            background-color:  red !important;
+        }
+        #div1{
+            position: absolute;
+            left: 50px;
+            border: 1px solid black;
+            background-color: yellow;
+            padding: 5px;
+            /* width: calc(100% - 100px); */
+            /* width: max(50%, 300px); */
+            width: min(50%, 300px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <h2>HTML</h2>
+    <h2>CSS</h2>
+    <h2>JS</h2>
+    <h2>NodeJs</h2>
+    <h2>MYSql</h2>
+    <h2>MYSql</h2>
+    <h2>MYSql</h2>
+    <h2>MYSql</h2>
+    <h2>MYSql</h2>
+    <h2>MYSql</h2>
+
+    <div id="div1">some text......</div>
+</body>
+</html>
