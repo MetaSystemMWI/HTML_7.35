@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+        .tooltip .toopltiptext{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0px;
+            position: absolute;
+            z-index: 1;
+        }
+        .tooltip:hover .toopltiptext{
+            visibility: visible;
+        } */
+        /* img{
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 150px;
+        } */
+
+        .contianer{
+            position: relative;
+            width: 50%;
+        }
+        .image{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .overlay{
+           position: absolute; 
+           top: 0;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           height: 100%;
+           width: 100%;
+           opacity: 0;
+           transition: .5s ease;
+           background-color: #008CBA;
+        }
+        .contianer:hover .overlay{
+            opacity: 1;
+        }
+        .text{
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="tooltip">WHO
+        <span class="toopltiptext">World Health Organization</span>
+    </div> -->
+    <!-- <img src="2.jpeg" alt=""> -->
+
+    <div class="contianer">
+        <img src="2.jpeg" alt="" class="image">
+        <div class="overlay">
+            <div class="text">Hello World</div>
+        </div>
+    </div>
+</body>
+</html>
