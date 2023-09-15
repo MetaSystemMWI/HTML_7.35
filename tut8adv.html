@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .flex{
+            display: flex;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+            background-color: aquamarine; */ 
+            /* justify-content: center; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly;
+        }
+        .flex>div{
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        } */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.header{
+   padding: 60px; 
+   text-align: center;
+   background-color: #1abc9c;
+   color: white;
+}
+.navbar{
+  display: flex;  
+  background-color: #333;
+}
+.navbar a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.side{
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding:20px;
+}
+.main{
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+/* .fakeimg{
+    background-color: #aaa;
+    width: 100%;
+    padding: 200px;
+} */
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+}
+@media screen and (max-width: 700px) {
+    .row, .navbar{
+        flex-direction: column;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- <div class="flex">
+        <div style="order: 1;">Home</div>
+        <div style="order: 3;">Gallery</div>
+        <div style="order: 6;">Contact</div>
+        <div style="order: 5;">Search</div>
+        <div style="order: 2;">App</div>
+        <div style="order: 4;">MY Contact</div>
+        
+    </div> -->
+
+
+
+
+    <div style="background: yellow; padding: 5px;">
+    <h4 style="text-align: center;">Resizeable</h4>
+    </div>
+
+    <div class="header">
+        <h1>My Website</h1>
+        <p>With a <b>Flexiable</b> Layout</p>
+    </div>
+
+
+    <div class="navbar">
+        <a href="">Home</a>
+        <a href="">News</a>
+        <a href="">Gallary</a>
+        <a href="">About</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+
+            <div class="fakeimg" style="height: 60px;">image</div>
+            <div class="fakeimg" style="height: 60px;">image</div>
+            <div class="fakeimg" style="height: 60px;">image</div>
+        </div>
+
+        <div class="main">
+            <h2>Title Heading</h2>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <h2>footer</h2>
+    </div>
+</body>
+</html>
